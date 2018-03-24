@@ -1,0 +1,38 @@
+.nav {
+    background-color: #01a1dd;
+    width: 28%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.nav-list-container {
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 40%;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.nav-list-item {
+    position: relative;
+    left: 33%;
+    margin-top: 12px;    
+}
+
+.nav-list-item a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.65);
+    font-size: 36px;
+    font-family: 'Roboto Condensed',sans-serif;
+    transition: ease-in 0.1s;
+}
+
+.nav-list-item a:hover {
+    color: rgba(255,255,255, 1);
+}
