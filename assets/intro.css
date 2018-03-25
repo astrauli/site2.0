@@ -1,0 +1,39 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name-container{
+    border-bottom: 8px #01a1dd solid;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.my-name {
+    font-size: 5.5em;
+    position: relative;
+    left: -120%;
+}
+
+.animate-from-left {
+   animation: from-left 2.3s forwards; 
+}
+
+@-webkit-keyframes from-left {
+    100% { left: 0; }
+}
+@-moz-keyframes from-left {
+    100% { left: 0; }
+}
+@-o-keyframes from-left {
+    100% { left: 0; }
+}
+@keyframes from-left {
+    100% { left: 0; }
+}
+
+.my-desc {
+    margin-top: 20px;
+    font-size: 2em;
+}
