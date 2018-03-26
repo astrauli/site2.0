@@ -26,6 +26,7 @@
 
 .project:hover {    
     box-shadow: 5px 5px 6px #D0D0D0;
+    transform: scale(1.05)
 }
 
 
@@ -33,20 +34,43 @@
     height: 40%;
     width: 100%;
     border-bottom: 1px solid #ccc;
+    position: relative;
 }
 
 .overlay {
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+}
+
+.demo-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;    
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.demo {
+    width: 100%;
+    position: relative;
+    z-index: -10;
 }
 
 .project-title {
     color: white;
     font-size: 3em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-container {
+    height: 60%;
+    position: relative;
 }
 
 .skill-set {
@@ -56,5 +80,5 @@
     border: 1px solid #000;
     position: absolute;
     bottom: 0;
-    z-index: -10;
+    z-index: -100;
 }
