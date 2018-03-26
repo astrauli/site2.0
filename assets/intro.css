@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+.intro-names-container {
+    position: relative;
+    bottom: 50px;
+}
+
 .my-name-container{
     border-bottom: 8px #01a1dd solid;
     padding-bottom: 10px;
@@ -21,15 +26,19 @@
 }
 
 @-webkit-keyframes from-left {
+    80% { left: 8px; }        
     100% { left: 0; }
 }
 @-moz-keyframes from-left {
+    80% { left: 8px; }    
     100% { left: 0; }
 }
 @-o-keyframes from-left {
+    80% { left: 8px; }     
     100% { left: 0; }
 }
 @keyframes from-left {
+    80% { left: 8px; }    
     100% { left: 0; }
 }
 
