@@ -19,6 +19,11 @@
     font-size: 5.5em;
     position: relative;
     left: -120%;
+    font-weight: 800;
+}
+
+.my-name span {
+    color: #01a1dd
 }
 
 .animate-from-left {

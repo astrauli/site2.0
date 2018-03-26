@@ -11,7 +11,7 @@
 }
 
 .project-container {
-
+    position: relative;
 }
 
 .project {
@@ -20,12 +20,14 @@
     border: 1px solid #ccc;
     box-shadow: 1px 1px 2px #D0D0D0;    
     transition: ease-in 0.2s;
-    
+    position: relative;
+    z-index: 10;
 }
 
 .project:hover {    
     box-shadow: 5px 5px 6px #D0D0D0;
 }
+
 
 .top-container {
     height: 40%;
@@ -47,3 +49,12 @@
     font-size: 3em;
 }
 
+.skill-set {
+    height: 70px;
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #000;
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+}
