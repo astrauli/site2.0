@@ -1,0 +1,49 @@
+.projects {
+
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.project-container {
+
+}
+
+.project {
+    width: 440px;
+    height: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #D0D0D0;    
+    transition: ease-in 0.2s;
+    
+}
+
+.project:hover {    
+    box-shadow: 5px 5px 6px #D0D0D0;
+}
+
+.top-container {
+    height: 40%;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    color: white;
+    font-size: 3em;
+}
+

@@ -1,6 +1,7 @@
 @import './shared.css';
 @import './nav.css';
 @import './intro.css';
+@import './projects.css';
 
 * {
     margin: 0;
