@@ -122,7 +122,6 @@
 
 .border-corner {
     border: 2px solid #01a1dd;
-    display: inline-block;
     padding: 25px;
     position: relative;
     z-index: -1;
