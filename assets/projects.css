@@ -157,9 +157,27 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top:100%;
+    top:144%;
     transition: ease-in 1s;
-    background-color: #000;
+    background-color: rgb(245, 248, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tech-icons {
+    height: 75px;
+    width: 75px;
+    margin: 10px;
 }
 
 .slide-bottom {
