@@ -19,7 +19,7 @@
 }
 
 .logo {
-    background-image: url('./profile-pic.jpeg');
+    background-image: url('../img/profile-pic.jpeg');
     height: 150px;
     width: 150px;
     border-radius: 50%;
