@@ -84,10 +84,17 @@
 .overlay {
     height: 100%;
     width: 100%;
-    background-color: rgba(221,116,1,0.5);
     position: absolute;
     z-index: 100;
     transition: ease-out 0.4s;
+}
+
+.tixfix {
+    background-color: rgba(221,116,1,0.5);    
+}
+
+.link {
+    background-color: rgba(21,201,50,0.5);
 }
 
 .project:hover .overlay {
