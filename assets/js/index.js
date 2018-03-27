@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.parentElement.classList.add("active-list-el")                
             }
         } else {
-            console.log("sd")
+            console.log("whale whale whale")
         }
 
     });
