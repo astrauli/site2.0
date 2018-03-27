@@ -18,7 +18,7 @@
     width: 440px;
     height: 300px;
     box-shadow: 1px 1px 2px #D0D0D0;    
-    transition: ease-in 0.2s;
+    transition: ease-in 0.4s;
     position: relative;
 }
 
@@ -31,7 +31,7 @@
     height: 40%;
     width: 100%;
     position: relative;
-    transition: ease-out 0.3s;
+    transition: ease-out 0.4s;
 }
 
 .project:hover .top-container {
@@ -44,7 +44,7 @@
     background-color: rgba(0,0,0,0.5);
     position: absolute;
     z-index: 100;
-    transition: ease-out 0.3s;
+    transition: ease-out 0.4s;
 }
 
 .project:hover .overlay {
@@ -69,7 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: ease-out 0.3s;
+    transition: ease-out 0.4s;
 }
 
 .project:hover .project-title {
@@ -81,11 +81,25 @@
     position: relative;
     z-index: 100;
     background-color: rgb(244, 247, 250);
-    transition: ease-out 0.3s;
+    transition: ease-out 0.4s;
+    overflow: hidden;
 }
 
 .project:hover .bottom-container {
     height: 30%;
+}
+
+.summary-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.summary {
+    font-size: 18px;
+    color: #00445D;
 }
 
 .skill-set {
