@@ -17,7 +17,6 @@
 .project {
     width: 440px;
     height: 300px;
-    /* border: 1px solid #ccc; */
     box-shadow: 1px 1px 2px #D0D0D0;    
     transition: ease-in 0.2s;
     position: relative;
@@ -25,14 +24,18 @@
 
 .project:hover {    
     box-shadow: 5px 5px 6px #D0D0D0;
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .top-container {
     height: 40%;
     width: 100%;
-    /* border-bottom: 1px solid #ccc; */
     position: relative;
+    transition: ease-out 0.3s;
+}
+
+.project:hover .top-container {
+    height: 70%;
 }
 
 .overlay {
@@ -41,14 +44,16 @@
     background-color: rgba(0,0,0,0.5);
     position: absolute;
     z-index: 100;
+    transition: ease-out 0.3s;
+}
+
+.project:hover .overlay {
+    background-color: transparent;
 }
 
 .demo-container {
-    /* height: 100%;
-    width: 100%; */
     position: absolute;    
     top: 0;
-    /* overflow: hidden; */
     z-index: -100;
 }
 
@@ -64,6 +69,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: ease-out 0.3s;
+}
+
+.project:hover .project-title {
+    color: transparent;
 }
 
 .bottom-container {
@@ -71,6 +81,11 @@
     position: relative;
     z-index: 100;
     background-color: rgb(244, 247, 250);
+    transition: ease-out 0.3s;
+}
+
+.project:hover .bottom-container {
+    height: 30%;
 }
 
 .skill-set {
