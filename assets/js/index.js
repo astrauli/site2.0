@@ -32,5 +32,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    
+    var height;
+    var navlist;
+    var item;
+    document.addEventListener('scroll', (e) => {
+        height = window.innerHeight;
+        navlist = document.querySelector(".nav-list");
+        if (window.scrollY < height) {
+            item = navlist.querySelector(".about-list-item");
+            if (!item.classList.contains("active-nav-item")){
+                removeActiveStatus();
+                item.classList.add("active-nav-item");
+                item.parentElement.classList.add("active-list-el")
+            }
+        } else if (window.scrollY < (height *2)){
+            item = navlist.querySelector(".projects-list-item");
+            if (!item.classList.contains("active-nav-item")){
+                removeActiveStatus();                
+                item.classList.add("active-nav-item");
+                item.parentElement.classList.add("active-list-el")                
+            }
+        } else if (window.scrollY < (height *3)){
+            removeActiveStatus();            
+            item = navlist.querySelector(".skills-list-item");
+            if (!item.classList.contains("active-nav-item")){
+                item.classList.add("active-nav-item");
+                item.parentElement.classList.add("active-list-el")                
+            }
+        } else {
+            console.log("sd")
+        }
+
+    });
     var scroll = new SmoothScroll('a[href*="#"]');
+    const removeActiveStatus = () => {
+        let navitems = document.querySelectorAll(".nav-list-item");
+        navitems.forEach(el => {
+            el.classList.remove("active-list-el");
+            el.childNodes[0].classList.remove("active-nav-item");
+        });
+    };
 });

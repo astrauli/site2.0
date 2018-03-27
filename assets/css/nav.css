@@ -41,7 +41,11 @@
 
 .nav-list-item {
     position: relative;
-    margin-top: 9px;    
+    margin-top: 9px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: ease-out 0.5s;    
 }
 
 .nav-list-item a{
@@ -53,6 +57,14 @@
 
 .nav-list-item a:hover {
     color: rgba(255,255,255, 1);
+}
+
+.active-nav-item {
+    color: rgba(255,255,255, 1) !important;    
+}
+
+.active-list-el {
+    background-color: rgba(255,255,255,0.15);
 }
 
 .social-media {
