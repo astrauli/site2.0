@@ -172,6 +172,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    width: 80%;
 }
 
 .tech-icons {
