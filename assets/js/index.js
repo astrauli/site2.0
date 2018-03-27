@@ -32,4 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    var scroll = new SmoothScroll('a[href*="#"]');
 });
