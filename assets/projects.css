@@ -98,6 +98,10 @@
     background-color: rgba(21,201,50,0.5);
 }
 
+.coffeewifi {
+    background-color: rgba(255,52,96,0.5);
+}
+
 .project:hover .overlay {
     background-color: transparent;
 }
