@@ -14,9 +14,26 @@
     position: relative;
 }
 
+.project-github {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 95%;
+    border: 1px solid #ccc;
+    background-color: rgb(245, 248, 250);
+    box-shadow: 1px 1px 2px #D0D0D0;        
+    z-index: 1000;
+}
+
+.project-icon {
+    fill: #01a1dd;
+}
+
 .project {
     width: 440px;
-    height: 300px;
+    height: 310px;
     box-shadow: 1px 1px 2px #D0D0D0;    
     transition: ease-in 0.4s;
     position: relative;
@@ -41,7 +58,7 @@
 .overlay {
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(221,116,1,0.5);
     position: absolute;
     z-index: 100;
     transition: ease-out 0.4s;

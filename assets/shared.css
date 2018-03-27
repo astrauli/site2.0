@@ -4,9 +4,10 @@
 
 .full-page {
     height: 100vh;
-    width: 72vw;
+    width: 80vw;
     position: relative;
-    left: 28vw;
+    left: 20vw;
+    border-bottom: 2px solid rgb(62, 64, 65);
 }
 
 .roboto {

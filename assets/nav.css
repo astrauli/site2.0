@@ -1,9 +1,18 @@
 .nav {
     background-color: #01a1dd;
-    width: 28vw;
+    width: 20vw;
     height: 100vh;
     z-index: 100;
 }
+
+.logo-container { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+}
+
 .logo {
     background-image: url('./profile-pic.jpeg');
     height: 150px;
@@ -11,12 +20,6 @@
     border-radius: 50%;
     background-position: 50%;
     border: 8px solid #0198D0;
-    position: relative;
-    left: 30%;
-    top: 18%;
-}
-
-.nav-list-container {
 }
 
 .nav-list {
@@ -27,13 +30,13 @@
     list-style: none;
     padding: 0;
     width: 100%;
-    height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-list-item {
     position: relative;
-    left: 37%;
-    margin-top: 12px;    
+    margin-top: 9px;    
 }
 
 .nav-list-item a{
@@ -47,25 +50,17 @@
     color: rgba(255,255,255, 1);
 }
 
-.social-media-container {
-    width: 100%;
-    height: 100px;
+.social-media {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    width: 100%;
     position: absolute;
     bottom: 30px;
 }
 
-.social-media {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-}
-
 .social-media a{
     text-decoration: none;
-    width: 50px;
 }
 
 .social-media a svg{
