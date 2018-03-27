@@ -25,21 +25,38 @@
 }
 
 .project-github {
-    top: 66%;
+    top: 72%;
     left: 95%;
+    /* fill: #01a2dd5e;     */
 }
+
+.project-github:hover .project-icon{
+    fill: #01a1dd;    
+}
+
 
 .project-skills {
     height: 35px;
     width: 35px;
-    top: 83%;
+    top: 89%;
     left: 95%;
+    border: 4px solid #01a2dd5e;
+    transition: ease-out 0.3s;
+}
+
+.project-skills:hover {
     border: 4px solid #01a1dd;
 }
 
-.project-icon {
-    fill: #01a1dd;
+.project-skills:hover .project-icon{
+    fill: #01a1dd;        
 }
+
+.project-icon {
+    fill: #01a2dd5e;
+    transition: ease-out 0.3s;
+}
+
 
 .project {
     width: 440px;
