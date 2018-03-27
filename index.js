@@ -21,4 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
              }
         });
     });
+    document.querySelectorAll(".chatapp-project").forEach(el => {
+        el.addEventListener('click', (e) => {
+            console.log(e.currentTarget.parentElement)
+            let disclaimer = e.currentTarget.parentElement.querySelector(".disclaimer");
+            if(disclaimer.classList.contains("slide-bottom")) {
+                disclaimer.classList.remove("slide-bottom");
+            } else {
+                disclaimer.classList.add("slide-bottom");
+            }
+        });
+    });
 });
