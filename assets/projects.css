@@ -17,23 +17,21 @@
 .project {
     width: 440px;
     height: 300px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     box-shadow: 1px 1px 2px #D0D0D0;    
     transition: ease-in 0.2s;
     position: relative;
-    z-index: 10;
 }
 
 .project:hover {    
     box-shadow: 5px 5px 6px #D0D0D0;
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
-
 
 .top-container {
     height: 40%;
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
     position: relative;
 }
 
@@ -42,21 +40,21 @@
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
+    z-index: 100;
 }
 
 .demo-container {
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     position: absolute;    
     top: 0;
-    z-index: -1;
-    overflow: hidden;
+    /* overflow: hidden; */
+    z-index: -100;
 }
 
 .demo {
     width: 100%;
     position: relative;
-    z-index: -10;
 }
 
 .project-title {
@@ -71,6 +69,8 @@
 .bottom-container {
     height: 60%;
     position: relative;
+    z-index: 100;
+    background-color: rgb(244, 247, 250);
 }
 
 .skill-set {

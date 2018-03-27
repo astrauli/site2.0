@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll(".project").forEach(el => {
         el.addEventListener('mouseenter', (e) => {
             let video = e.currentTarget.getElementsByTagName('video');
-            video[0].play();
+            video[0].play(2);
         });
         el.addEventListener('mouseleave', (e) => {
             let video = e.currentTarget.getElementsByTagName('video');
