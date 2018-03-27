@@ -27,7 +27,6 @@
 .project-github {
     top: 72%;
     left: 95%;
-    /* fill: #01a2dd5e;     */
 }
 
 .project-github:hover .project-icon{
@@ -155,13 +154,16 @@
 
 
 .skill-set {
-    height: 70px;
-    padding: 10px;
-    width: 400px;
-    border: 1px solid #000;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 0;
-    z-index: -100;
+    top:100%;
+    transition: ease-in 1s;
+    background-color: #000;
+}
+
+.slide-bottom {
+    top: 0%;
 }
 
 .border-corner {
