@@ -157,6 +157,152 @@ jsPlumb.ready(function() {
         });
     }
 
+    let ormInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let orm = document.querySelectorAll(".orm");
+    let ormTitle = document.querySelector(".orm-title");
+    ormInstance.draggable(orm);
+    ormInstance.draggable(ormTitle);
+    for(let i = 0; i < orm.length; i++) {
+        ormInstance.connect({
+            source: ormTitle, 
+            target: orm[i], 
+            detachable:false
+        });
+    }
+
+    let conceptInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let concept = document.querySelectorAll(".concept");
+    let conceptTitle = document.querySelector(".concept-title");
+    conceptInstance.draggable(concept);
+    conceptInstance.draggable(conceptTitle);
+    for(let i = 0; i < concept.length; i++) {
+        conceptInstance.connect({
+            source: conceptTitle, 
+            target: concept[i], 
+            detachable:false
+        });
+    }
+
+    let hostingInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let hosting = document.querySelectorAll(".hosting");
+    let hostingTitle = document.querySelector(".hosting-title");
+    hostingInstance.draggable(hosting);
+    hostingInstance.draggable(hostingTitle);
+    for(let i = 0; i < hosting.length; i++) {
+        hostingInstance.connect({
+            source: hostingTitle, 
+            target: hosting[i], 
+            detachable:false
+        });
+    }
+
+    let testingInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let testing = document.querySelectorAll(".testing");
+    let testingTitle = document.querySelector(".testing-title");
+    testingInstance.draggable(testing);
+    testingInstance.draggable(testingTitle);
+    for(let i = 0; i < testing.length; i++) {
+        testingInstance.connect({
+            source: testingTitle, 
+            target: testing[i], 
+            detachable:false
+        });
+    }
+
+    let bundlerInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let bundler = document.querySelectorAll(".bundler");
+    let bundlerTitle = document.querySelector(".bundler-title");
+    bundlerInstance.draggable(bundler);
+    bundlerInstance.draggable(bundlerTitle);
+    for(let i = 0; i < bundler.length; i++) {
+        bundlerInstance.connect({
+            source: bundlerTitle, 
+            target: bundler[i], 
+            detachable:false
+        });
+    }
+
+    let workflowInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let workflow = document.querySelectorAll(".workflow");
+    let workflowTitle = document.querySelector(".workflow-title");
+    workflowInstance.draggable(workflow);
+    workflowInstance.draggable(workflowTitle);
+    for(let i = 0; i < workflow.length; i++) {
+        workflowInstance.connect({
+            source: workflowTitle, 
+            target: workflow[i], 
+            detachable:false
+        });
+    }
+
+    let statemanagementInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let statemanagement = document.querySelectorAll(".statemanagement");
+    let statemanagementTitle = document.querySelector(".statemanagement-title");
+    statemanagementInstance.draggable(statemanagement);
+    statemanagementInstance.draggable(statemanagementTitle);
+    for(let i = 0; i < statemanagement.length; i++) {
+        statemanagementInstance.connect({
+            source: statemanagementTitle, 
+            target: statemanagement[i], 
+            detachable:false
+        });
+    }
 
 
 });
