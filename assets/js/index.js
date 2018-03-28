@@ -100,6 +100,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]          
     });
     let languages = document.querySelectorAll(".language");
     let languageTitle = document.querySelector(".language-title");
@@ -121,6 +122,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]
     })
     let framework = document.querySelectorAll(".framework");
     let libraries = document.querySelectorAll(".library");
@@ -144,6 +146,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]          
     })
     let database = document.querySelectorAll(".database");
     let databaseTitle = document.querySelector(".database-title");
@@ -165,6 +168,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]          
     })
     let orm = document.querySelectorAll(".orm");
     let ormTitle = document.querySelector(".orm-title");
@@ -186,6 +190,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]          
     })
     let concept = document.querySelectorAll(".concept");
     let conceptTitle = document.querySelector(".concept-title");
@@ -207,6 +212,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]
     })
     let hosting = document.querySelectorAll(".hosting");
     let hostingTitle = document.querySelector(".hosting-title");
@@ -228,6 +234,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]          
     })
     let testing = document.querySelectorAll(".testing");
     let testingTitle = document.querySelector(".testing-title");
@@ -249,6 +256,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]          
     })
     let bundler = document.querySelectorAll(".bundler");
     let bundlerTitle = document.querySelector(".bundler-title");
@@ -270,6 +278,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]          
     })
     let workflow = document.querySelectorAll(".workflow");
     let workflowTitle = document.querySelector(".workflow-title");
@@ -291,6 +300,7 @@ jsPlumb.ready(function() {
           Connector:[ "Bezier", { curviness: 10 } ],
           Endpoint:[ "Dot", { radius:2 } ],
           EndpointStyle : { fill: "#01a1dd"  },
+          Anchor : [ 'BottomCenter', 'TopCenter' ]          
     })
     let statemanagement = document.querySelectorAll(".statemanagement");
     let statemanagementTitle = document.querySelector(".statemanagement-title");
