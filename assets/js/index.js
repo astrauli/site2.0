@@ -60,8 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.classList.add("active-nav-item");
                 item.parentElement.classList.add("active-list-el")                
             }
-        } else {
-            console.log("whale whale whale")
+        } else if (window.scrollY < (height *4)){
+            removeActiveStatus();            
+            item = navlist.querySelector(".contact-list-item");
+            if (!item.classList.contains("active-nav-item")){
+                item.classList.add("active-nav-item");
+                item.parentElement.classList.add("active-list-el")                
+            }
         }
 
     });
