@@ -76,22 +76,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 jsPlumb.ready(function() {
-    //setup total
-    let draggables = document.querySelectorAll(".draggable");
-    let horizontalOffset = 0;
-    let verticalOffset = 0;
-    draggables.forEach(el => {
-        if(horizontalOffset > (window.innerWidth * 0.76)) {
-            horizontalOffset = 0;
-            verticalOffset = verticalOffset + 80;
-        }
-        el.style.left = horizontalOffset + 10 + 'px'
-        horizontalOffset = horizontalOffset + 200;
-        if (verticalOffset !== 0) {
-            el.style.top = verticalOffset + 90 + 'px';
-        }
-    });
-
+    // setup total
+    // let draggables = document.querySelectorAll(".draggable");
+    // let horizontalOffset = 0;
+    // let verticalOffset = 0;
+    // draggables.forEach(el => {
+    //     if(horizontalOffset > (window.innerWidth * 0.76)) {
+    //         horizontalOffset = 0;
+    //         verticalOffset = verticalOffset + 80;
+    //     }
+    //     el.style.left = horizontalOffset + 10 + 'px'
+    //     horizontalOffset = horizontalOffset + 200;
+    //     if (verticalOffset !== 0) {
+    //         el.style.top = verticalOffset + 90 + 'px';
+    //     }
+    // });
+    
     let languagesInstance = jsPlumb.getInstance({
         PaintStyle:{ 
             strokeWidth:1, 
@@ -102,17 +102,28 @@ jsPlumb.ready(function() {
           EndpointStyle : { fill: "#01a1dd"  },
           Anchor : [ 'BottomCenter', 'TopCenter' ]          
     });
-    let languages = document.querySelectorAll(".language");
+    languagesInstance.setSuspendDrawing(true);
     let languageTitle = document.querySelector(".language-title");
+    let languages = document.querySelectorAll(".language");
     languagesInstance.draggable(languages);
     languagesInstance.draggable(languageTitle);
+    languageTitle.style.top = '100px';
+    languageTitle.style.left = '10px';
+    var top = parseInt(languageTitle.style.top);
+    var left = parseInt(languageTitle.style.left);
     for(let i = 0; i < languages.length; i++) {
+        languages[i].style.top = top + 'px';
+        top = top + 100;
+        languages[i].style.left = left + 200 + 'px';
+        left = left - 100;
         languagesInstance.connect({
             source: languageTitle, 
             target: languages[i], 
             detachable:false
         });
     }
+    languagesInstance.setSuspendDrawing(true);
+    
 
     let frameworkInstance = jsPlumb.getInstance({
         PaintStyle:{ 
@@ -170,6 +181,7 @@ jsPlumb.ready(function() {
           EndpointStyle : { fill: "#01a1dd"  },
           Anchor : [ 'BottomCenter', 'TopCenter' ]          
     })
+    
     let orm = document.querySelectorAll(".orm");
     let ormTitle = document.querySelector(".orm-title");
     ormInstance.draggable(orm);
@@ -178,28 +190,6 @@ jsPlumb.ready(function() {
         ormInstance.connect({
             source: ormTitle, 
             target: orm[i], 
-            detachable:false
-        });
-    }
-
-    let conceptInstance = jsPlumb.getInstance({
-        PaintStyle:{ 
-            strokeWidth:1, 
-            stroke:"#01a1dd",
-          },
-          Connector:[ "Bezier", { curviness: 10 } ],
-          Endpoint:[ "Dot", { radius:2 } ],
-          EndpointStyle : { fill: "#01a1dd"  },
-          Anchor : [ 'BottomCenter', 'TopCenter' ]          
-    })
-    let concept = document.querySelectorAll(".concept");
-    let conceptTitle = document.querySelector(".concept-title");
-    conceptInstance.draggable(concept);
-    conceptInstance.draggable(conceptTitle);
-    for(let i = 0; i < concept.length; i++) {
-        conceptInstance.connect({
-            source: conceptTitle, 
-            target: concept[i], 
             detachable:false
         });
     }
@@ -214,17 +204,29 @@ jsPlumb.ready(function() {
           EndpointStyle : { fill: "#01a1dd"  },
           Anchor : [ 'BottomCenter', 'TopCenter' ]
     })
+    hostingInstance.setSuspendDrawing(true);
     let hosting = document.querySelectorAll(".hosting");
     let hostingTitle = document.querySelector(".hosting-title");
     hostingInstance.draggable(hosting);
     hostingInstance.draggable(hostingTitle);
+    hostingTitle.style.top = '100px';
+    hostingTitle.style.left = '1px';
+    top = parseInt(hostingTitle.style.top);
+    left = parseInt(hostingTitle.style.left);
+    console.log(top, left)
     for(let i = 0; i < hosting.length; i++) {
+        hosting[i].style.top = top + 100 + 'px';
+        top = top - 80;
+        hosting[i].style.left = left + 'px';
+        left = left + 80 ;
         hostingInstance.connect({
             source: hostingTitle, 
             target: hosting[i], 
             detachable:false
         });
     }
+    hostingInstance.setSuspendDrawing(false,true);
+    
 
     let testingInstance = jsPlumb.getInstance({
         PaintStyle:{ 
