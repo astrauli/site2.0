@@ -1,14 +1,3 @@
-.skills-list {
-    font-size: 24px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.draggable {
-    position: absolute;
-}
-/* divider */
 
 .set-container {
     margin-left: 10%;
