@@ -74,3 +74,89 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 });
+
+jsPlumb.ready(function() {
+    //setup total
+    let draggables = document.querySelectorAll(".draggable");
+    let horizontalOffset = 0;
+    let verticalOffset = 0;
+    draggables.forEach(el => {
+        if(horizontalOffset > (window.innerWidth * 0.76)) {
+            horizontalOffset = 0;
+            verticalOffset = verticalOffset + 80;
+        }
+        el.style.left = horizontalOffset + 10 + 'px'
+        horizontalOffset = horizontalOffset + 200;
+        if (verticalOffset !== 0) {
+            el.style.top = verticalOffset + 90 + 'px';
+        }
+    });
+
+    let languagesInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    });
+    let languages = document.querySelectorAll(".language");
+    let languageTitle = document.querySelector(".language-title");
+    languagesInstance.draggable(languages);
+    languagesInstance.draggable(languageTitle);
+    for(let i = 0; i < languages.length; i++) {
+        languagesInstance.connect({
+            source: languageTitle, 
+            target: languages[i], 
+            detachable:false
+        });
+    }
+
+    let frameworkInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let framework = document.querySelectorAll(".framework");
+    let libraries = document.querySelectorAll(".library");
+    let fAndL = Array.from(framework).concat(Array.from(libraries));
+    let frameworkTitle = document.querySelector(".framework-title");
+    frameworkInstance.draggable(fAndL);
+    frameworkInstance.draggable(frameworkTitle);
+    for(let i = 0; i < fAndL.length; i++) {
+        frameworkInstance.connect({
+            source: frameworkTitle, 
+            target: fAndL[i], 
+            detachable:false
+        });
+    }
+
+    let databaseInstance = jsPlumb.getInstance({
+        PaintStyle:{ 
+            strokeWidth:1, 
+            stroke:"#01a1dd",
+          },
+          Connector:[ "Bezier", { curviness: 10 } ],
+          Endpoint:[ "Dot", { radius:2 } ],
+          EndpointStyle : { fill: "#01a1dd"  },
+    })
+    let database = document.querySelectorAll(".database");
+    let databaseTitle = document.querySelector(".database-title");
+    databaseInstance.draggable(database);
+    databaseInstance.draggable(databaseTitle);
+    for(let i = 0; i < database.length; i++) {
+        databaseInstance.connect({
+            source: databaseTitle, 
+            target: database[i], 
+            detachable:false
+        });
+    }
+
+
+
+});
