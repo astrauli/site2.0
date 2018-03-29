@@ -93,3 +93,101 @@
 .social-media a:hover .icon{
     fill: rgba(255,255,255,1);
 }
+
+@media screen and (max-width: 1300px) {
+    .nav {
+        background-color: #01a1dd;
+        width: 20vw;
+        height: 100vh;
+        z-index: 100;
+    }
+    
+    .logo-container { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 8%;
+    }
+    
+    .logo-container img {
+        margin-bottom: 10px;
+    }
+    
+    .logo {
+        background-image: url('../img/profile-pic.jpeg');
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-position: 50%;
+        border: 8px solid #0198D0;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 9%;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-list-item {
+        position: relative;
+        margin-top: 8px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: ease-out 0.5s;    
+    }
+    
+    .nav-list-item a{
+        text-decoration: none;
+        color: rgba(255,255,255,0.65);
+        font-size: 36px;
+        transition: ease-in 0.2s;
+    }
+    
+    .nav-list-item a:hover {
+        color: rgba(255,255,255, 1);
+    }
+    
+    .active-nav-item {
+        color: rgba(255,255,255, 1) !important;    
+    }
+    
+    .active-list-el {
+        background-color: rgba(255,255,255,0.15);
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 8px;
+    }
+    
+    .social-media a{
+        text-decoration: none;
+    }
+    
+    .social-media a svg{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .icon {
+        fill: rgba(255,255,255,0.65);
+        transition: ease-in 0.15s;
+    }
+    
+    .social-media a:hover .icon{
+        fill: rgba(255,255,255,1);
+    }
+}
