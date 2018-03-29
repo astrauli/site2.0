@@ -48,3 +48,22 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 1300px) {
+    .contact {
+        height: 105vh;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        box-shadow: -1px -1px 8px #ccc;
+        position: absolute;
+        bottom: 0;
+        height: 40px;
+        width: 100%;
+        background-color: rgb(255,248,250);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

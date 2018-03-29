@@ -1,7 +1,9 @@
+.skills {
+}
 
 .set-container {
     margin-left: 10%;
-    height: 73%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -30,4 +32,10 @@
 
 .footnote {
     font-size: 14px;
+}
+
+@media screen and (max-width: 1300px) {
+    .skills {
+        height: 115vh;        
+    }
 }

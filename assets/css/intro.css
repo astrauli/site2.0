@@ -63,3 +63,10 @@
 .about-text {
     font-size: 1.3em;
 }
+
+@media screen and (max-width: 1300px) {
+    .intro-names-container {
+        position: relative;
+        bottom: 15px;
+    }
+}
