@@ -70,3 +70,20 @@
         bottom: 15px;
     }
 }
+
+@media screen and (max-height: 500px) {
+    .intro {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-height: 815px) {
+    .intro {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+

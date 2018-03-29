@@ -29,3 +29,11 @@
 .title {
     font-size: 3em;
 }
+
+@media screen and (max-height: 815px) {
+    .full-page {
+        width: 100vw;
+        height: auto;
+        left: 0;
+    }
+}

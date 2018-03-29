@@ -39,3 +39,20 @@
         height: 115vh;        
     }
 }
+
+@media screen and (max-width: 1050px) {
+    .skills {
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 815px) {
+    .skills {
+        padding-bottom: 20px;
+    }
+
+    .footnote-container {
+        bottom: 0;
+        left: 30px;
+    }
+}

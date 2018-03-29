@@ -25,6 +25,7 @@
     border-radius: 50%;
     background-position: 50%;
     border: 8px solid #0198D0;
+    background-size: 100%;    
 }
 
 .nav-list {
@@ -121,6 +122,7 @@
         width: 150px;
         border-radius: 50%;
         background-position: 50%;
+        background-size: 100%;
         border: 8px solid #0198D0;
     }
     
@@ -152,29 +154,8 @@
         transition: ease-in 0.2s;
     }
     
-    .nav-list-item a:hover {
-        color: rgba(255,255,255, 1);
-    }
-    
-    .active-nav-item {
-        color: rgba(255,255,255, 1) !important;    
-    }
-    
-    .active-list-el {
-        background-color: rgba(255,255,255,0.15);
-    }
-    
     .social-media {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        position: absolute;
         bottom: 8px;
-    }
-    
-    .social-media a{
-        text-decoration: none;
     }
     
     .social-media a svg{
@@ -182,12 +163,13 @@
         height: 60px;
     }
     
-    .icon {
-        fill: rgba(255,255,255,0.65);
-        transition: ease-in 0.15s;
-    }
-    
-    .social-media a:hover .icon{
-        fill: rgba(255,255,255,1);
+}
+
+@media screen and (max-height: 815px) {
+    .nav {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
     }
 }
