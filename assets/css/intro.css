@@ -79,7 +79,7 @@
     }
 }
 
-@media screen and (max-height: 815px) {
+@media screen and (max-height: 815px) and (max-width: 800px) {
     .intro {
         height: auto;
         padding-top: 60px;

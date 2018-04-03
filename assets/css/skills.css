@@ -46,9 +46,12 @@
     }
 }
 
-@media screen and (max-height: 815px) {
+@media screen and (max-height: 815px) and (max-width: 800px) {
     .skills {
         padding-bottom: 20px;
+    }
+    .set-container {
+        padding-right: 20px;
     }
 
     .footnote-container {

@@ -273,7 +273,7 @@
     }
 }
 
-@media screen and (max-height: 815px) {
+@media screen and (max-height: 815px) and (max-width: 800px) {
     .project {
         width: 80vw;
         height: 310px;
