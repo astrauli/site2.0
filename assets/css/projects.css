@@ -275,7 +275,7 @@
 
 @media screen and (max-height: 815px) and (max-width: 800px) {
     .project {
-        width: 80vw;
+        max-width: 440px;
         height: 310px;
     }
 
