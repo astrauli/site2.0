@@ -34,6 +34,18 @@
     font-size: 14px;
 }
 
+@media screen and (min-width: 1300px) {
+    .skill-header {
+        color: rgb(25, 26, 32);
+        font-size: 38px;
+        margin-bottom: 5px;
+    }
+    .skill-items {
+        color: rgb(37, 53, 124);
+        font-size: 28px;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .skills {
         height: 115vh;        

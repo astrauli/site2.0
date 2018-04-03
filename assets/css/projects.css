@@ -252,6 +252,15 @@
   z-index: 1;
 }
 
+@media screen and (min-width: 1300px) {
+    .summary {
+        font-size: 22px;
+        color: rgb(62, 64, 65);
+        position: relative;
+        z-index: 10;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .projects {
         height: auto;

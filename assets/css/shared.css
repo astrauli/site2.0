@@ -30,6 +30,12 @@
     font-size: 3em;
 }
 
+@media screen and (min-width: 1300px) {
+    .title {
+        font-size: 4em;
+    }
+}
+
 @media screen and (max-height: 815px) and (max-width: 800px) {
     .full-page {
         width: 100vw;
