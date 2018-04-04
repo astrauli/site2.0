@@ -61,7 +61,7 @@
 }
 
 .about-text {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 @media screen and (min-width: 1450px) {
@@ -76,7 +76,7 @@
         font-size: 3em;
     }
     .about-text {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 }
 
