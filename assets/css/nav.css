@@ -94,7 +94,8 @@
 .social-media a:hover .icon{
     fill: rgba(255,255,255,1);
 }
-@media screen and (min-width: 1050px) {
+
+@media screen and (min-width: 1450px) {
     
     .logo-container { 
         width: 100%;
