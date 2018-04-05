@@ -284,13 +284,22 @@
 }
 
 @media screen and (max-height: 815px) and (max-width: 800px) {
+    .project-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding-top: 0;
+    }
+
     .project {
-        max-width: 440px;
-        height: 310px;
+        max-width: 310px;
+        height: 400px;
     }
 
     .project-github {
-        top: 72%;
+        top: 79%;
         left: 93%;
     }
     
@@ -299,7 +308,7 @@
     }
     
     .project-skills {
-        top: 89%;
+        top: 92%;
         left: 93%;
     }
 }
