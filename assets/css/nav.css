@@ -301,7 +301,7 @@
     }
 }
 
-@media screen and (max-height: 815px) and (max-width: 800px) {
+@media screen and (max-height: 825px) and (max-width: 800px) {
     .nav {
         position: fixed;
         top: 0;

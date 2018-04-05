@@ -283,7 +283,7 @@
     }
 }
 
-@media screen and (max-height: 815px) and (max-width: 800px) {
+@media screen and (max-height: 825px) and (max-width: 375px) {
     .project-row {
         display: flex;
         flex-direction: column;
@@ -294,7 +294,7 @@
     }
 
     .project {
-        max-width: 310px;
+        max-width: 300px;
         height: 400px;
     }
 
@@ -311,4 +311,52 @@
         top: 92%;
         left: 93%;
     }
+
+    .tech-icons {
+        height: 60px;
+        width: 60px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-height: 825px) and (min-width: 410px) {
+    .project {
+        max-width: 325px;
+        height: 400px;
+    }
+
+    .project-github {
+        top: 79%;
+        left: 94%;
+    }
+    
+    .project-skills {
+        top: 93%;
+        left: 94%;
+    }
+}
+
+@media screen and (max-height: 825px) and (max-width: 320px) {
+    .project {
+        max-width: 270px;
+        height: 400px;
+    }
+
+    .project-container {
+        margin-bottom: 17px;
+    }
+
+    .project-github {
+        top: 95%;
+        left: 20%;
+    }
+    
+    .project-skills {
+        top: 95%;
+        left: 62%;
+    }
+}
+
+@media screen and (max-height: 825px) and (max-width: 800px) {
+
 }
