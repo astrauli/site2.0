@@ -112,7 +112,10 @@
 
 .chatapp {
     background-color: rgba(210,201,43,0.5);
-    
+}
+
+.jsgame {
+    background-color: rgba(92,187,217,0.5)
 }
 
 .project:hover .overlay {
