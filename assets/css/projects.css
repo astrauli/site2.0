@@ -189,10 +189,9 @@
 .slide-up {
     width: 100%;
     height: 100%;
-    padding-top: 10px;
     box-sizing: border-box;
     position: absolute;
-    top: 150%;
+    top: 155%;
     transition: ease-in 1s;
     background-color: rgb(245, 248, 250);
     display: flex;
@@ -215,8 +214,10 @@
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    width: 80%;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .tech-icons {
