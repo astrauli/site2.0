@@ -115,7 +115,11 @@
 }
 
 .jsgame {
-    background-color: rgba(92,187,217,0.5)
+    background-color: rgba(92,187,217,0.5);
+}
+
+.gym-bot {
+    background-color: rgba(92,187,217,0.5);
 }
 
 .project:hover .overlay {
@@ -185,8 +189,10 @@
 .slide-up {
     width: 100%;
     height: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
     position: absolute;
-    top: 144%;
+    top: 150%;
     transition: ease-in 1s;
     background-color: rgb(245, 248, 250);
     display: flex;
@@ -217,6 +223,10 @@
     height: 75px;
     width: 75px;
     margin: 10px;
+}
+
+.text-skill {
+    font-size: 24px;
 }
 
 .slide-bottom {
@@ -323,9 +333,9 @@
     }
 }
 
-@media screen and (max-height: 825px) and (min-width: 410px) {
+@media screen and (max-height: 825px) and (min-width: 400px) {
     .project {
-        max-width: 325px;
+        max-width: 315px;
         height: 400px;
     }
 
