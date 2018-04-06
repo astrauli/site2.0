@@ -351,6 +351,23 @@
     }
 }
 
+@media screen and (max-height: 825px) and (min-width: 440px) {
+    .project {
+        max-width: 380px;
+        height: 320px;
+    }
+
+    .project-github {
+        top: 75%;
+        left: 94%;
+    }
+    
+    .project-skills {
+        top: 92%;
+        left: 94%;
+    }
+}
+
 @media screen and (max-height: 825px) and (max-width: 320px) {
     .project {
         max-width: 270px;
