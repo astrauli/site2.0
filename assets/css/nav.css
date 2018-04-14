@@ -35,8 +35,9 @@
     top: 12%;
     list-style: none;
     padding: 0;
+    height: 30%;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -128,9 +129,10 @@
         position: relative;
         top: 11%;
         list-style: none;
+        height: 30%;
         padding: 0;
         width: 100%;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
     
@@ -197,9 +199,10 @@
         position: relative;
         top: 9%;
         list-style: none;
+        height: 30%;
         padding: 0;
         width: 100%;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
     
@@ -270,8 +273,9 @@
         top: 7%;
         list-style: none;
         padding: 0;
+        height: 30%;
         width: 100%;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
     
